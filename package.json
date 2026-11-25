@@ -1,0 +1,39 @@
+{
+  "name": "lsp-control-tower",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc --noEmit && vite build",
+    "test": "tsx --test control-tower/*.test.ts",
+    "dev": "vite --host 127.0.0.1",
+    "rayfin": "rayfin"
+  },
+  "dependencies": {
+    "@microsoft/rayfin-auth": "2.0.1",
+    "@microsoft/rayfin-auth-provider-fabric": "2.0.1",
+    "@microsoft/rayfin-client": "2.0.1",
+    "@microsoft/rayfin-connectors": "2.0.1",
+    "@microsoft/rayfin-connector-fabric-semanticmodel": "2.0.1",
+    "@microsoft/rayfin-core": "2.0.1",
+    "@microsoft/rayfin-functions": "2.0.1",
+    "lucide-react": "^0.468.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^3.0.0"
+  },
+  "devDependencies": {
+    "@microsoft/rayfin-cli": "2.0.1",
+    "@microsoft/rayfin-guide": "2.0.1",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "~5.9.3",
+    "vite": "^7.0.0"
+  },
+  "allowScripts": {
+    "keytar@7.9.0": true
+  }
+}

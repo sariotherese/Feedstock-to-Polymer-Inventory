@@ -1,0 +1,56 @@
+{
+  "schemaVersion": "3.0",
+  "functions": [
+    {
+      "functionName": "getTelemetry",
+      "delegateParameters": [
+        {
+          "name": "ctx",
+          "type": "RayfinContext",
+          "optional": false,
+          "hasDefault": false,
+          "position": 0,
+          "isFabricParameter": false
+        }
+      ],
+      "contextAudiences": [
+        "Sql"
+      ],
+      "capabilities": []
+    },
+    {
+      "functionName": "getLoads",
+      "delegateParameters": [
+        {
+          "name": "ctx",
+          "type": "RayfinContext",
+          "optional": false,
+          "hasDefault": false,
+          "position": 0,
+          "isFabricParameter": false
+        }
+      ],
+      "contextAudiences": [
+        "Sql"
+      ],
+      "capabilities": []
+    },
+    {
+      "functionName": "getFabricHealth",
+      "delegateParameters": [
+        {
+          "name": "ctx",
+          "type": "RayfinContext",
+          "optional": false,
+          "hasDefault": false,
+          "position": 0,
+          "isFabricParameter": false
+        }
+      ],
+      "contextAudiences": [
+        "Fabric"
+      ],
+      "capabilities": []
+    }
+  ]
+}

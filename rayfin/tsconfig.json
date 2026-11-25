@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": [
+      "ES2022",
+      "DOM",
+      "ESNext.Decorators"
+    ],
+    "types": [
+      "node"
+    ],
+    "outDir": ".temp/compiled",
+    "rootDir": ".",
+    "declaration": true,
+    "composite": true,
+    "noEmit": false,
+    "allowImportingTsExtensions": false,
+    "importHelpers": false,
+    "experimentalDecorators": false,
+    "emitDecoratorMetadata": false,
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext"
+  },
+  "include": [
+    "**/*"
+  ],
+  "exclude": [
+    ".temp/**/*",
+    "functions/**/*"
+  ]
+}
