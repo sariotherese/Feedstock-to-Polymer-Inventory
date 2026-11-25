@@ -1,0 +1,47 @@
+id: lsp-control-tower
+name: lsp-control-tower
+version: 1.0.11
+services:
+  auth:
+    enabled: true
+    customClaims:
+      app_version: 1.0.0
+    scopes:
+      - read:data
+      - write:data
+    password:
+      enabled: false
+    allowedRedirectUris:
+      - http://localhost:5173
+      - http://127.0.0.1:5173
+      - https://soft-vine-b99f07e159-westus.webapp.fabricapps.net
+    fabric:
+      enabled: true
+  data:
+    enabled: false
+    dialect: mssql
+  staticHosting:
+    enabled: true
+    buildCommand: npm run build
+    folder: dist
+    indexDocument: index.html
+    assetAccess: protected
+  functions:
+    enabled: true
+    path: rayfin/functions
+    buildCommand: npm run build
+    auth:
+      type: application
+  storage:
+    enabled: false
+connectors:
+  - name: plantmodel
+    type: fabric-semanticmodel
+    config:
+      workspaceId: 6d6350e8-6f22-4a8b-b06a-eb4a3b68dd23
+      itemId: f265d0ef-7fab-45c3-b640-384cb3608101
+    auth:
+      type: delegated
+    version: "1"
+    operations:
+      - name: executeQuery

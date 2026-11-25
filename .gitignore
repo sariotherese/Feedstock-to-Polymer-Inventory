@@ -1,0 +1,15 @@
+__pycache__/
+.venv/
+.fabric/
+*.pyc
+.env
+.env.*
+node_modules/
+dist/
+rayfin/.env*
+rayfin/.deployments.json
+rayfin/.cache/
+rayfin/.generated/
+rayfin/.temp/
+rayfin/functions/node_modules/
+rayfin/functions/dist/
